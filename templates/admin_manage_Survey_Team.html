@@ -1,0 +1,210 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Selecao Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <nav id="navbar" class="navbar">
+        <ul>
+         
+            <li><a class="nav-link scrollto active" href="/manage_surevy_team">Manage Survey Team</a></li>
+            <li><a class="nav-link scrollto active" href="/verify_donation">verify donation team</a></li>
+            <li><a class="nav-link scrollto active" href="/view_survey">view survey</a></li>
+            <li><a class="nav-link scrollto active" href="/view_donation">view donations-wallet</a></li>
+            <li><a class="nav-link scrollto active" href="/manage_products">manage products</a></li>
+            <li><a class="nav-link scrollto active" href="/view_order">view orders</a></li>
+            <li><a class="nav-link scrollto active" href="/view_compliant">view complaints</a></li>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown"><span>Manage survey</span></h2>
+          <p class="animate__animated fanimate__adeInUp"></p>
+
+        </div>
+      </div>
+<!-- 
+      Slide 2 -->
+      <!-- <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
+          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div> -->
+
+      <!-- Slide 3 -->
+      <!-- <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div> -->
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+<center>
+    
+<body>
+    {%if data['up']%}
+
+    <form action="" method="post" class="form-control">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="name" value="{{data['up'][0]['name']}}"></td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td><input type="number" name="pnum" value="{{data['up'][0]['phone']}}"></td>
+            </tr>
+            <tr>
+                <th>email</th>
+                <td><input type="email" name="email" value="{{data['up'][0]['email']}}"></td>
+            </tr>
+            <tr>
+                <th>Place</th>
+                <td><input type="text" name="place" value="{{data['up'][0]['place']}}"></td>
+            </tr>
+          
+            <tr>
+                <td><input type="submit" name="update" value="update"></td>
+            </tr>
+        </table>
+    </form>
+
+{%else%}
+
+<form action="" method="post" style="margin: 20px;">
+  <table style="width: 400px; border-collapse: collapse;">
+      <tr>
+          <th style="padding: 10px;">Name</th>
+          <td><input type="text" name="name" style="padding: 8px;"></td>
+      </tr>
+      <tr>
+          <th style="padding: 10px;">Phone</th>
+          <td><input type="number" name="pnum" style="padding: 8px;"></td>
+      </tr>
+      <tr>
+          <th style="padding: 10px;">Email</th>
+          <td><input type="email" name="email" style="padding: 8px;"></td>
+      </tr>
+      <tr>
+          <th style="padding: 10px;">Place</th>
+          <td><input type="text" name="place" style="padding: 8px;"></td>
+      </tr>
+      <tr>
+          <th style="padding: 10px;">Username</th>
+          <td><input type="text" name="uname" style="padding: 8px;"></td>
+      </tr>
+      <tr>
+          <th style="padding: 10px;">Password</th>
+          <td><input type="password" name="password" style="padding: 8px;"></td>
+      </tr>
+      <tr>
+          <td align="center" colspan="2">
+              <input type="submit" class="btn btn-info" name="submit" style="padding: 10px; background-color: #4CAF50; color: white; border: none;">
+          </td>
+      </tr>
+  </table>
+</form>
+
+    <br><br><br>
+    <table border="2" class="table" style="width: 1000px; margin-top: 20px; border-collapse: collapse;">
+      <tr style="background-color: #2f18c4; color: white; font-weight: bold;">
+          <th style="padding: 10px;">Sl No</th>
+          <th style="padding: 10px;">Name</th>
+          <th style="padding: 10px;">Place</th>
+          <th style="padding: 10px;">Phone</th>
+          <th style="padding: 10px;">Email</th>
+          <th style="padding: 10px;">Actions</th>
+      </tr>
+  
+      {% for row in data['donation_tm'] %}
+      <tr style="border: 1px solid #ddd;">
+          <td style="padding: 10px;">{{ loop.index }}</td>
+          <td style="padding: 10px;">{{ row['name'] }}</td>
+          <td style="padding: 10px;">{{ row['place'] }}</td>
+          <td style="padding: 10px;">{{ row['phone'] }}</td>
+          <td style="padding: 10px;">{{ row['email'] }}</td>
+          <td style="padding: 10px;">
+              <a href="?action=update&id={{row['survey_team_id']}}" style="color: #007BFF; text-decoration: none; margin-right: 10px;">update</a>
+              <a href="?action=delete&id={{row['survey_team_id']}}" style="color: #DC3545; text-decoration: none;">delete</a>
+          </td>
+      </tr>
+      {% endfor %}
+  </table>
+  
+{%endif%}
+</body>
+</html>
+</center>
+
+
+{%include 'footer.html'%}
